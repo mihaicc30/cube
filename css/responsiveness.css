@@ -37,6 +37,13 @@
    .contactusDetails div{
     padding: 0.4rem;
    }
+   details{
+    max-width: 100%;
+   }
+   summary{
+    max-width: 100%;
+    font-size: 1.1rem;
+   }
 }
 
 @media (max-width: 800px) {

@@ -1,0 +1,29 @@
+.faqContainer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--bg2);
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    transition: 1s ease all;
+}
+summary{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 750px;
+    padding: 1rem;
+    transition: 1s ease all;
+}
+details{
+    max-width: 800px;
+    padding: 1rem;
+    transition: 1s ease all;
+}
+[open] p{
+    background-color: var(--bg3);
+    padding: 2rem;
+    transition: 1s ease all;
+}
