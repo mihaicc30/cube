@@ -1,0 +1,179 @@
+.landing{
+    height: 50vh;
+    width: 98vw;
+    background-image: url('../img/background/bg\ \(2\).jpg');
+    background-size: cover;
+    mask-image: -webkit-gradient(linear, center top, center bottom, from(rgb(255 8 8 / 1%)), to(rgb(0 0 0)));
+    -webkit-mask-image: -webkit-gradient(linear, center top, center bottom, from(rgb(255 8 8 / 1%)), to(rgb(0 0 0)));
+    margin:0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing img{
+    width: 98vw;
+}
+.landingCenter{
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.landingCenter>*{
+    background-color: transparent;
+    overflow:initial;
+}
+.landingCenter h1{
+    font-size: 4rem;
+    text-shadow: 6px 2px var(--bg4),-5px 7px black;
+}
+.landingCenter h2{
+    margin-top: 2rem;
+}
+.landingCenter h2 a{
+    background-color: var(--bg4);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.aboutusContainer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    text-align: center;
+}
+
+.offerContainer, .introContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: var(--bg2);
+    max-width: 1577px;
+    padding: 1rem;
+}
+.offering{
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    gap: 2rem;
+}
+.offering div:nth-child(2) div:nth-child(1){
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.offering div:nth-child(2) div:nth-child(2){
+    text-align:left;
+    padding: 1rem;
+}
+.introContainer div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--bg2);
+}
+.introContainer div p{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--bg3);
+}
+.introContainer div:nth-of-type(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2rem;
+    background-color: var(--bg2);
+    
+    margin: 1rem;
+    padding: 1rem;
+}
+.introContainer div img{
+    max-width: 300px;
+}
+
+.introContainer div:nth-child(1) div{
+    position: relative;
+    margin-right: 5rem;
+}
+.introContainer div:nth-child(1) ion-icon{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    background-color: transparent;
+    color: var(--bg4);
+    cursor: pointer;
+}
+
+
+/* infinite loop */
+@keyframes translateinfinite {
+	100% { transform:translateX(calc(-253px * 3));  }
+}
+
+.slide-option{
+    position: relative;
+}
+.highway-barrier {
+    overflow: hidden;
+    width: 98vw;
+}
+.highway-lane{
+    display: flex;
+    gap: 3rem;
+    width: auto;
+}
+.highway-car{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:auto;
+    animation: translateinfinite 8s linear infinite;
+}
+.highway-car ion-icon{
+    font-size: 5rem;
+    margin: 0 2rem;
+}
+#infinite div.highway-barrier::before {
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--bg1) 20%, rgba(255, 255, 255, 0) 100%);
+}
+#infinite div.highway-barrier::before {
+    content: " ";
+    position: absolute;
+    z-index: 9;
+    width: 30vw;
+    height: 100px;
+}
+
+
+#infinite div.highway-barrier::after {
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left, rgb(0,0,0) 20%, rgba(255, 255, 255, 0) 100%);
+}
+#infinite div.highway-barrier::after {
+    content: " ";
+    position: absolute;
+    z-index: 9;
+    width: 30vw;
+    height: 100px;
+}

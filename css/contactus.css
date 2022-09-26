@@ -1,0 +1,43 @@
+.contactusForm{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.contactusForm div input, #messageDiv>textarea {
+    padding: 1rem;
+    width: 320px;
+}
+#formBtnDiv button{
+    background-color: var(--bg4);
+}
+
+.contactusDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 4rem;
+    padding: 2rem;
+    background-color: var(--bg2);
+}
+.contactusDetails div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg1);
+    padding: 1rem;
+    text-align: center;
+}
+.contactusDetails div div:first-child{
+    padding: 1rem;
+}
+.contactusMap{
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+}

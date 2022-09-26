@@ -1,0 +1,48 @@
+.lineupContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--bg2);
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 1400px;
+    margin:0 auto;
+    padding: 1rem;
+    transition: .5s ease;
+    opacity: 1;
+}
+.artist div img{
+    max-width: 400px;
+    margin: 2rem;
+}
+.artist{
+    display: flex;
+}
+.artistDetails{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    justify-content: center;
+}
+.artistDetails div{
+    margin: 1rem;
+}
+.artistDetails div div:first-child{
+    padding: 2rem;
+    margin: 1rem;
+    background-color: var(--bg2);
+    border-radius: 50%;
+}
+.year{
+    color: var(--bg4);
+    cursor: pointer;
+}
+.hide{
+    transition: .5s ease;
+    opacity: 0;
+}
+.notDisplay{
+    display: none;
+}

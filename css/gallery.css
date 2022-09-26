@@ -1,0 +1,26 @@
+.galleryContainer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--bg2);
+    justify-content: center;
+    max-width: 1400px;
+    margin:0 auto;
+}
+.galleryContainer >  img{
+    width: auto;
+    height: 300px;
+    padding: 2rem;
+    margin: 1rem;
+}
+.galleryContainer >  img:hover{
+    transform: scale(1.2);
+    transition: .4s ease;
+}
+.galleryContainer >  img:nth-child(2n){
+    margin-top: 5rem;
+    background-color: var(--bg3);
+}
+.galleryContainer >  img:nth-child(3n){
+    margin-top: 5rem;
+    background-color: var(--bg2);
+}

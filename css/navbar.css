@@ -1,0 +1,57 @@
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar ul li:not(:nth-of-type(4)):hover{
+    transition: 1s ease;
+    transform: translateY(-6px);
+}
+.navbar ul {
+    border-top: 1px solid var(--bg4);
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.logoSection a img {
+    height: 200px;
+}
+
+.active {
+    color: var(--bg4);
+}
+.news{
+    width: 100vw!important;
+    font-size: 1.2rem;
+}
+
+
+.news {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .news1 {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+  }
+  
+  .news1 p {
+    display: inline-block;
+    margin-right: 6rem;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }

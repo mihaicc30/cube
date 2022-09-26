@@ -1,0 +1,35 @@
+    <div class="contactusForm">
+        <div id="errorsDiv"></div>
+        <div id="nameDiv"><input type="text" placeholder="Your Name*" id="name" onkeypress="return /[aA-zZ]/i.test(event.key)"></div>
+        <div id="emailDiv"><input type="text" placeholder="Your Email*" id="email"></div>
+        <div id="phoneDiv"><input type="text" placeholder="Your Phone*" id="phone" onkeypress="return /[0-9+]/i.test(event.key)" ></div>
+        <div id="messageDiv"><textarea placeholder="Your message*" name="message" id="message" rows="4" cols="27"></textarea></div>
+        <div id="formBtnDiv"><button type="button" onclick="validateThis()">Send Message</button></div>
+    </div>
+
+    <div class="contactusDetails">
+        <div>
+            <div class=""><ion-icon size="large" name="locate-outline"></ion-icon></div>
+            <div class=""><p>E Park Terrace,<br>Southampton SO14 0YN</p></div>
+        </div>
+        
+        <div>
+            <div class=""><ion-icon size="large" name="call-outline"></ion-icon></div>
+            <div class=""><p>+44 4567 891 234<br>+0 12345 123 123</p></div>
+        </div>
+        
+        <div>
+            <div class=""><ion-icon size="large" name="mail-outline"></ion-icon></div>
+            <div class=""><p>office@cube@email.com<br>contactus@cube@email.com</p></div>
+        </div>
+
+    </div>
+
+
+    <div class="contactusMap">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.832039681931!2d-1.4025687841325363!3d50.90832386214736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487476b1943c33e9%3A0x7b3d2a7c433db059!2sSolent%20University!5e0!3m2!1sen!2suk!4v1664151397544!5m2!1sen!2suk"
+            style="border:0;width: 98vw; height: 30vh;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
