@@ -22,7 +22,7 @@ app.use('/', require(__dirname+'/routes/contactus.js'));
 app.use('/', require(__dirname+'/routes/index.js'));
 
 if(process.env.LIVE== 1){
-    app.listen(5000, console.log(`Cube Events Website on port: 5000 \nFor quick access, CTRL+CLICK here: http://localhost:5000/`));
+    app.listen(process.env.PORT, console.log(`Cube Events Website on port: 5000 \nFor quick access, CTRL+CLICK here: http://localhost:5000/`));
 } else {
-    app.listen(5000, console.log(`Cube Events Website`))
+    app.listen(process.env.PORT, console.log(`Cube Events Website`))
 }
