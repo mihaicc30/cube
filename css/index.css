@@ -177,3 +177,21 @@
     width: 30vw;
     height: 100px;
 }
+
+.stickyNote{
+    width: 20vw;
+    border: 2px solid white;
+    padding: 3rem 1rem;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    z-index: 1111111;
+}
+.stickyNote ion-icon{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+}
