@@ -9,6 +9,9 @@ async function validateThis() {
     let message = document.getElementById('message').value
 
     var testingString = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!testingString.test(email)) {
+        errors.push("Email not valid.")
+    }
 
     if (name.length < 1 || email.length < 1 || phone.length < 1 || message.length < 1) {
         errors.push("Complete all fields.")
@@ -17,9 +20,6 @@ async function validateThis() {
         errors.push("Wrong phone format.")
     }
 
-    if (!testingString.test(email)) {
-        errors.push("Email not valid.")
-    }
 
     if (errors.length > 0) {
         errorDiv.innerHTML = ""

@@ -11,8 +11,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `cube_events`
 --
-CREATE DATABASE IF NOT EXISTS `cube_events` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `cube_events`;
+-- CREATE DATABASE IF NOT EXISTS `cube_events` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `srceri2b6hm5gkly`;
 
 -- --------------------------------------------------------
 
