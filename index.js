@@ -13,12 +13,16 @@ app.use(express.json());
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
-app.use('/', require('./routes/index.js'));
-app.use('/', require('./routes/lineup.js'));
-app.use('/', require('./routes/gallery.js'));
-app.use('/', require('./routes/faq.js'));
-app.use('/', require('./routes/minigame.js'));
-app.use('/', require('./routes/contactus.js'));
-app.use('/', require('./routes/index.js'));
+app.use('/', require(__dirname+'/routes/index.js'));
+app.use('/', require(__dirname+'/routes/lineup.js'));
+app.use('/', require(__dirname+'/routes/gallery.js'));
+app.use('/', require(__dirname+'/routes/faq.js'));
+app.use('/', require(__dirname+'/routes/minigame.js'));
+app.use('/', require(__dirname+'/routes/contactus.js'));
+app.use('/', require(__dirname+'/routes/index.js'));
 
-app.listen(5000, console.log(`Cube Events Website on port: 5000 \nFor quick access, CTRL+CLICK here: http://localhost:5000/`));
+if(process.env.LIVE== 1){
+    app.listen(5000, console.log(`Cube Events Website on port: 5000 \nFor quick access, CTRL+CLICK here: http://localhost:5000/`));
+} else {
+    app.listen(5000, console.log(`Cube Events Website`))
+}
