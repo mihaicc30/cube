@@ -7,16 +7,16 @@
 
     <% results.forEach(res=> { %>
         <div class="year<%= res.year %>">
-            <h1 class="year" onclick="toggleDisplay(this)">LINE-UP <%= res.performing_on %>
+            <h1 class="year hidden" onclick="toggleDisplay(this)">LINE-UP <%= res.performing_on %>
             </h1>
-            <div class="lineupContainer">
+            <div class="lineupContainer hidden">
                 <h1>
                     <%= res.name %>
                 </h1>
-                <div class="artist">
+                <div class="artist hidden">
                     <div><img src="<%= res.image%>" alt=""></div>
                     <div>
-                        <div class="artistDetails">
+                        <div class="artistDetails hidden">
                             <% (res.attributes).split(",").forEach(attribute=> {%>
                                 <div>
                                     <div>
